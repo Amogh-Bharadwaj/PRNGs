@@ -1,2 +1,2 @@
 # PRNGs
-I found using hashclash a bit 
+Theory on breaking two PRNGs : Linear Congruential Generator and the Elliptic Curve Dual Random Bit Generator
