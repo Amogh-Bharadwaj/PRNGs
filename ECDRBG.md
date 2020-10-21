@@ -19,8 +19,8 @@ return (S<sub>1</sub>.Q).x >> 240 <br>
 ### Backdoor
 Suppose we choose Q such that **Q = (d.P)**, where `d` is an integer known to us.<br>
 This is what happens:<br>
-S<sub>1</sub> = (S<sub>0</sub>.P).x
-**// Now Q = d.P**
+S<sub>1</sub> = (S<sub>0</sub>.P).x <br>
+**// Now Q = d.P** <br>
 return ((S<sub>1</sub>d).P).x >> 240 <br>
 <br>
 So now we can predict all future outputs. The only obstacle is retrieving the discarded 16 bits, which can easily be achieved using a bruteforce of 2<sup>16</sup> = 65536 tries.
